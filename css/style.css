@@ -1,0 +1,78 @@
+.navbar-brand img {
+    max-height: 40px;  
+}
+
+.bg-area {
+    position: fixed;
+    left:-50%;
+    right: -50%; 
+    top : 0;
+    min-height: 70vh;
+    bottom: 0;
+    animation: animate 5s ease-in-out infinite alternate;
+    background: linear-gradient( 90deg, #a93563,50%, #2d276b -50%);
+    opacity: .5;
+    z-index:-1;
+
+/*clip path pouch modifier la forma du header*/
+
+
+}
+.layer-2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+
+}
+.layer-3{
+    animation-duration: 3s;
+
+}
+.banner-text{
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-text h2{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: #fff;
+    margin: 0;
+}
+.banner-text h6{
+    font-size: 20px;
+    margin:0;
+    font-family: courgette ;
+    color: #fff;
+
+}
+.row .portfolio{
+    min-height: 100vh;
+    background-color: rgba(white,0.5);
+    display: flex;
+    min-height: 90vh;
+    align-items: flex-end;
+    font-family: 'Dancing Script', cursive;
+    /*ou bien au lieu d ecrire min height et aling items on peut tt simplement ecrire padding-top: 35%;*/
+}
+/*pour les responsive breakpoint afin de faire des truc spécifique ( dans notre cas elle sera pas afficher) pour l'afichage sur les smartphones*/
+
+
+@media screen and (max-width: 934px) {
+    .portfolio > h2 {
+        display: none;
+    }
+  }
+
+
+@keyframes animate {
+         0% {
+          transform: translateX(-50%);
+         } 
+         100% {
+          transform: translateX(50%);
+         }
+
+}

@@ -1,0 +1,122 @@
+.navbar-brand img {
+    max-height: 40px;  
+}
+header .row {
+    min-height: 70vh;
+    background-image: url(../res/ban.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    clip-path: polygon(0 1%, 100% 0, 100% 95%, 0 80%);
+}
+header h1{
+    font-family: 'Dancing Script', cursive;
+}
+header .modi{
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    align-content: center;
+    color: black;
+    padding-left: 40px;
+}
+
+header .bienvenue{
+    background: url(../res/blanc.jpg) fixed no-repeat top left ;
+    opacity: .4;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+ 
+
+}
+header h2{
+    font-family:'Dancing Script', cursive; 
+}
+header .slogan{
+    display: flex;
+    font-size:x-large ;
+    min-height: 50vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: white;
+    font-family:'Dancing Script', cursive; 
+    
+
+}
+@media (max-width: 576px) { 
+    header .row .portfolio{
+        display: none;
+    }
+ }
+
+ 
+    /*ou bien au lieu d ecrire min height et aling items on peut tt simplement ecrire padding-top: 35%;*/
+/*pour les responsive breakpoint afin de faire des truc spécifique ( dans notre cas elle sera pas afficher) pour l'afichage sur les smartphones*/
+
+
+.container-fluid .row img {
+   width: 60px;
+   height: 60px;
+}
+
+.teste{
+    min-height: 100vh;
+    background-color: #d3dae4;
+    text-align: left ;   
+    padding-left: 16%;
+    position: relative;
+
+}
+.teste span {
+    font-size: 5rem;
+    padding-left:14% ;
+    
+   
+}
+.teste h5{
+    font-size: 2,5rem;
+    columns: #888888;
+}
+.fondpassion{
+    background-image: url(../res/crochet.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#contact{
+    background-image: url(../res/contact.png);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    min-height: calc(100vh , 50px);
+}
+#contact .row{ 
+
+}
+.formcontact{
+    background-color: rgba(255,255,255,0.7);
+    padding: 2rem 1rem;
+}
+footer{
+    background-color: rgba(0,0,0,.8);
+    color:#999;
+    padding-top: 2rem;
+    padding-bottom: 1,5rem;
+}
+footer a {
+    columns: #999999;
+    font-size: 2rem;
+    transition: all .2s ease-in-out;
+}
+footer a:hover {
+    columns: #ffff;
+    text-decoration: none;
+
+}
+.qui{
+    padding-top: 50px;
+    margin-left: -25px;
+}
